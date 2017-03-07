@@ -7,7 +7,7 @@ This is a special mysql image with a little database for my frontend-development
 If you download the Dockerfile please make sure to include the other files from the github repo before running build.
 
 ```bash
-$ docker build -t uwegerdes/mysql ./mysql/
+$ docker build -t uwegerdes/mysql .
 ```
 
 ## Running the mysql container
