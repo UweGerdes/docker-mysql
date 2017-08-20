@@ -33,8 +33,6 @@ COPY entrypoint.sh /usr/local/bin/
 RUN chmod 755 /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
-COPY init_database.sql /entrypoint-initdb.d/
-
 EXPOSE 3306
 
 VOLUME [ "${MYSQL_DATA_DIR}", "${MYSQL_RUN_DIR}" ]
