@@ -17,7 +17,6 @@ RUN { \
 	} | debconf-set-selections && \
 	apt-get update && \
 	apt-get install -y \
-					tzdata \
 					mysql-server && \
 	rm -rf ${MYSQL_DATA_DIR} && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
