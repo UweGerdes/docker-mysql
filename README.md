@@ -25,7 +25,7 @@ The mysql container exposes port 3306 but we don't expose it on the host system.
 
 To keep the database on your host you could add `-v /srv/docker/mysql:/var/lib/mysql` to the run command and the database files are stored in `/src/docker/mysql`.
 
-If you have a database init script you should add `-v $(pwd)/src/mysql:/entrypoint-initdb.d` (see my frontend development project).
+If you have a database init script you should add `-v $(pwd)/build/mysql:/entrypoint-initdb.d` (see my frontend development project).
 
 To work with the database exec commands in the running container:
 
