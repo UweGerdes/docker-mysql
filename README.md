@@ -1,6 +1,6 @@
 # Docker uwegerdes/mysql
 
-This is a special mysql image with a little database for my frontend-development project.
+This is a special mysql image with a little database for my [`frontend-development`](https://github.com/UweGerdes/frontend-development) project.
 
 ## Building mysql image
 
@@ -34,3 +34,4 @@ $ docker exec -i mysql mysql -u root -p123546 demoDb < ./mysql/init_database.sql
 $ docker exec -i mysql mysqldump -u root -p123546 demoDb > demoDbDump.sql
 $ docker exec -it mysql bash
 ```
+

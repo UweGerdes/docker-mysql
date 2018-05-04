@@ -1,3 +1,5 @@
+# mysql docker image
+
 FROM uwegerdes/baseimage
 MAINTAINER Uwe Gerdes <entwicklung@uwegerdes.de>
 
@@ -38,3 +40,4 @@ EXPOSE 3306
 VOLUME [ "${MYSQL_DATA_DIR}", "${MYSQL_RUN_DIR}" ]
 
 CMD ["mysqld"]
+
